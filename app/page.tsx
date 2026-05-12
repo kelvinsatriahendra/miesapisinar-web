@@ -1,65 +1,153 @@
 import Image from "next/image";
 
+function WhatsAppIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" fill="currentColor">
+      <path d="M20.52 3.48A11.88 11.88 0 0 0 12.04 0C5.5 0 .2 5.3.2 11.84a11.8 11.8 0 0 0 1.6 5.95L0 24l6.4-1.67a11.83 11.83 0 0 0 5.64 1.44h.01c6.53 0 11.83-5.3 11.83-11.84a11.8 11.8 0 0 0-3.36-8.45Zm-8.48 18.3h-.01a9.8 9.8 0 0 1-4.98-1.36l-.36-.21-3.8 1 1.02-3.7-.24-.38a9.84 9.84 0 0 1-1.5-5.27c0-5.44 4.43-9.87 9.88-9.87a9.8 9.8 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 6.98c0 5.44-4.43 9.87-9.88 9.87Zm5.41-7.38c-.3-.15-1.8-.89-2.08-.99-.28-.1-.48-.15-.68.15-.2.3-.78.99-.95 1.2-.18.2-.35.22-.65.07-.3-.15-1.25-.46-2.37-1.47a8.94 8.94 0 0 1-1.64-2.03c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.63-.93-2.23-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.53.08-.81.38-.28.3-1.06 1.03-1.06 2.5s1.08 2.89 1.23 3.09c.15.2 2.13 3.24 5.16 4.54.72.31 1.28.5 1.72.64.72.23 1.37.2 1.89.12.58-.09 1.8-.74 2.05-1.45.25-.72.25-1.34.18-1.47-.08-.12-.28-.2-.58-.35Z" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" fill="currentColor">
+      <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z" />
+    </svg>
+  );
+}
+
+function TikTokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" fill="currentColor">
+      <path d="M16.7 2h2.66c.15 1.26.72 2.42 1.62 3.3.9.88 2.08 1.42 3.34 1.54v2.72a8.14 8.14 0 0 1-4.96-1.69v6.44a6.31 6.31 0 1 1-5.47-6.25v2.9a3.5 3.5 0 1 0 2.81 3.44V2Z" />
+    </svg>
+  );
+}
+
+const menus = [
+  {
+    name: "Mie Spesial Sapi",
+    description: "Mie gurih dengan topping daging sapi dan sayur segar.",
+    price: "Rp18.000",
+    image: "/menu-1.jpeg",
+  },
+  {
+    name: "Mie Sambal Nampol",
+    description: "Rasa pedas manis ala resto, cocok untuk pecinta pedas.",
+    price: "Rp16.000",
+    image: "/menu-2.jpeg",
+  },
+  {
+    name: "Mie Komplit Ekonomis",
+    description: "Porsi kenyang dengan cita rasa premium harga bersahabat.",
+    price: "Rp15.000",
+    image: "/menu-3.jpeg",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-10 px-4 py-8 md:px-8 md:py-12">
+      <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-6 py-10 shadow-lg backdrop-blur md:px-10">
+        <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
+          Company Profile UMKM
+        </p>
+        <h1 className="font-serif text-4xl font-bold leading-tight text-orange-950 md:text-5xl">
+          Miesapisinar
+        </h1>
+        <p className="mt-4 max-w-2xl text-base leading-7 text-stone-700 md:text-lg">
+          Menjual makanan ala resto dengan harga ekonomis dan murah meriah agar
+          bisa dinikmati segala konsumen mulai dari pelajar, pekerja, hingga
+          masyarakat luas.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="https://wa.me/6282266592267"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-orange-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-800"
+          >
+            Pesan via WhatsApp
+          </a>
+          <a
+            href="#katalog"
+            className="rounded-full border border-orange-300 px-5 py-3 text-sm font-semibold text-orange-900 transition hover:bg-orange-100"
+          >
+            Lihat Katalog
+          </a>
+        </div>
+      </section>
+
+      <section id="katalog" className="space-y-5">
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="font-serif text-3xl font-bold text-orange-950">Katalog Menu</h2>
+          <p className="text-sm font-medium text-stone-600">Harga ekonomis ala resto</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3">
+          {menus.map((menu) => (
+            <article
+              key={menu.name}
+              className="overflow-hidden rounded-2xl border border-orange-200 bg-white shadow-md"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src={menu.image}
+                  alt={menu.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="space-y-2 p-4">
+                <h3 className="text-lg font-semibold text-orange-950">{menu.name}</h3>
+                <p className="text-sm leading-6 text-stone-600">{menu.description}</p>
+                <p className="text-base font-bold text-orange-700">{menu.price}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-3xl border border-orange-200 bg-white px-6 py-8 shadow-md md:px-8">
+        <h2 className="font-serif text-2xl font-bold text-orange-950">Kontak & Sosial Media</h2>
+        <div className="mt-4 grid gap-3 text-sm text-stone-700 md:grid-cols-2">
+          <a
+            className="flex items-center gap-3 rounded-xl border border-orange-200 p-4 transition hover:bg-orange-50"
+            href="https://wa.me/6282266592267"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+              <WhatsAppIcon />
+            </span>
+            <span>WhatsApp: 082266592267</span>
+          </a>
+          <a
+            className="flex items-center gap-3 rounded-xl border border-orange-200 p-4 transition hover:bg-orange-50"
+            href="https://www.instagram.com/miesapisinar/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-100 text-pink-700">
+              <InstagramIcon />
+            </span>
+            <span>Instagram: @miesapisinar</span>
+          </a>
+          <a
+            className="flex items-center gap-3 rounded-xl border border-orange-200 p-4 transition hover:bg-orange-50"
+            href="https://www.tiktok.com/@miesapisinartidarsby?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-100 text-zinc-800">
+              <TikTokIcon />
+            </span>
+            <span>TikTok: @miesapisinartidarsby</span>
+          </a>
+          <p className="rounded-xl border border-orange-200 p-4">
+            Visi: Menjual makanan ala resto harga ekonomis untuk semua kalangan.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
