@@ -49,6 +49,18 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 sm:gap-10 sm:py-8 md:px-8 md:py-12">
       <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-4 py-7 shadow-lg backdrop-blur sm:px-6 sm:py-10 md:px-10">
+        <div className="mb-5 flex items-center gap-4">
+          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-orange-200 sm:h-24 sm:w-24">
+            <Image
+              src="/logo-miesapisinar.jpeg"
+              alt="Logo Miesapisinar"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <p className="text-sm font-medium text-stone-700 sm:text-base">@miesapisinartidarsby</p>
+        </div>
         <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
           Company Profile UMKM
         </p>
@@ -56,9 +68,9 @@ export default function Home() {
           Miesapisinar
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-700 sm:mt-4 sm:text-base md:text-lg">
-          Menjual makanan ala resto dengan harga ekonomis dan murah meriah agar
-          bisa dinikmati segala konsumen mulai dari pelajar, pekerja, hingga
-          masyarakat luas.
+          Mie sapi dan ayam juara pedasnya. Menjual makanan ala resto dengan
+          harga ekonomis dan murah meriah agar bisa dinikmati segala konsumen
+          mulai dari pelajar, pekerja, hingga masyarakat luas.
         </p>
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
@@ -130,7 +142,7 @@ export default function Home() {
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-100 text-pink-700">
               <InstagramIcon />
             </span>
-            <span>Instagram: @miesapisinar</span>
+            <span>Instagram: @miesapisinartidarsby</span>
           </a>
           <a
             className="flex items-center gap-3 rounded-xl border border-orange-200 p-4 transition hover:bg-orange-50"
@@ -145,6 +157,15 @@ export default function Home() {
           </a>
           <p className="rounded-xl border border-orange-200 p-4">
             Visi: Menjual makanan ala resto harga ekonomis untuk semua kalangan.
+          </p>
+          <p className="rounded-xl border border-orange-200 p-4">
+            Jam buka: 12.00 - 23.59
+          </p>
+          <p className="rounded-xl border border-orange-200 p-4">
+            Alamat: Jl. Tidar depan SPBU, Surabaya
+          </p>
+          <p className="rounded-xl border border-orange-200 p-4">
+            Nomor tambahan: 0881036268003 (via Gojek/Shopee)
           </p>
         </div>
       </section>
