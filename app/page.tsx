@@ -47,31 +47,31 @@ const menus = [
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-10 px-4 py-8 md:px-8 md:py-12">
-      <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-6 py-10 shadow-lg backdrop-blur md:px-10">
+    <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 sm:gap-10 sm:py-8 md:px-8 md:py-12">
+      <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-4 py-7 shadow-lg backdrop-blur sm:px-6 sm:py-10 md:px-10">
         <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
           Company Profile UMKM
         </p>
-        <h1 className="font-serif text-4xl font-bold leading-tight text-orange-950 md:text-5xl">
+        <h1 className="font-serif text-3xl font-bold leading-tight text-orange-950 sm:text-4xl md:text-5xl">
           Miesapisinar
         </h1>
-        <p className="mt-4 max-w-2xl text-base leading-7 text-stone-700 md:text-lg">
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-stone-700 sm:mt-4 sm:text-base md:text-lg">
           Menjual makanan ala resto dengan harga ekonomis dan murah meriah agar
           bisa dinikmati segala konsumen mulai dari pelajar, pekerja, hingga
           masyarakat luas.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
             href="https://wa.me/6282266592267"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-orange-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-orange-800"
+            className="w-full rounded-full bg-orange-700 px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-orange-800 sm:w-auto"
           >
             Pesan via WhatsApp
           </a>
           <a
             href="#katalog"
-            className="rounded-full border border-orange-300 px-5 py-3 text-sm font-semibold text-orange-900 transition hover:bg-orange-100"
+            className="w-full rounded-full border border-orange-300 px-5 py-3 text-center text-sm font-semibold text-orange-900 transition hover:bg-orange-100 sm:w-auto"
           >
             Lihat Katalog
           </a>
@@ -79,11 +79,11 @@ export default function Home() {
       </section>
 
       <section id="katalog" className="space-y-5">
-        <div className="flex items-end justify-between gap-4">
-          <h2 className="font-serif text-3xl font-bold text-orange-950">Katalog Menu</h2>
-          <p className="text-sm font-medium text-stone-600">Harga ekonomis ala resto</p>
+        <div className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-end sm:gap-4">
+          <h2 className="font-serif text-2xl font-bold text-orange-950 sm:text-3xl">Katalog Menu</h2>
+          <p className="text-xs font-medium text-stone-600 sm:text-sm">Harga ekonomis ala resto</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
           {menus.map((menu) => (
             <article
               key={menu.name}
@@ -98,7 +98,7 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-2 p-4">
-                <h3 className="text-lg font-semibold text-orange-950">{menu.name}</h3>
+                <h3 className="text-base font-semibold text-orange-950 sm:text-lg">{menu.name}</h3>
                 <p className="text-sm leading-6 text-stone-600">{menu.description}</p>
                 <p className="text-base font-bold text-orange-700">{menu.price}</p>
               </div>
@@ -107,8 +107,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="rounded-3xl border border-orange-200 bg-white px-6 py-8 shadow-md md:px-8">
-        <h2 className="font-serif text-2xl font-bold text-orange-950">Kontak & Sosial Media</h2>
+      <section className="rounded-3xl border border-orange-200 bg-white px-4 py-6 shadow-md sm:px-6 sm:py-8 md:px-8">
+        <h2 className="font-serif text-xl font-bold text-orange-950 sm:text-2xl">Kontak & Sosial Media</h2>
         <div className="mt-4 grid gap-3 text-sm text-stone-700 md:grid-cols-2">
           <a
             className="flex items-center gap-3 rounded-xl border border-orange-200 p-4 transition hover:bg-orange-50"
@@ -148,6 +148,16 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <a
+        href="https://wa.me/6282266592267"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-700 sm:bottom-6 sm:right-6"
+      >
+        <WhatsAppIcon />
+        <span>Chat WhatsApp</span>
+      </a>
     </main>
   );
 }
