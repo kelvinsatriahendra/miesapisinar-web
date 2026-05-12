@@ -90,10 +90,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="katalog" className="space-y-5">
-        <div className="space-y-1">
-          <h2 className="font-serif text-2xl font-bold text-orange-950 sm:text-3xl">Katalog Menu</h2>
-          <p className="text-sm font-medium text-stone-600">Harga ekonomis ala resto</p>
+      <section id="katalog" className="space-y-5 pt-1">
+        <div className="space-y-2 rounded-2xl bg-white/70 px-3 py-3 sm:px-4">
+          <h2 className="font-serif text-2xl leading-[1.2] font-bold text-orange-950 sm:text-3xl">Katalog Menu</h2>
+          <p className="text-sm font-medium text-stone-700">Harga ekonomis ala resto</p>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {menus.map((menu) => (
@@ -167,6 +167,23 @@ export default function Home() {
           <p className="rounded-xl border border-orange-200 p-4">
             Nomor tambahan: 0881036268003 (via Gojek/Shopee)
           </p>
+          <a
+            className="rounded-xl border border-orange-200 p-4 font-semibold text-orange-800 transition hover:bg-orange-50"
+            href="https://maps.app.goo.gl/sahCwr7UpZtLfvRZ6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buka di Google Maps
+          </a>
+        </div>
+        <div className="mt-4 overflow-hidden rounded-2xl border border-orange-200">
+          <iframe
+            title="Lokasi Miesapisinar"
+            src="https://www.google.com/maps?q=Jl%20Tidar%20depan%20SPBU,%20Surabaya&output=embed"
+            className="h-64 w-full sm:h-72"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
       </section>
 
