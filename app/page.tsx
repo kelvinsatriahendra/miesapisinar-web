@@ -91,17 +91,17 @@ export default function Home() {
       </section>
 
       <section id="katalog" className="space-y-5">
-        <div className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-end sm:gap-4">
+        <div className="space-y-1">
           <h2 className="font-serif text-2xl font-bold text-orange-950 sm:text-3xl">Katalog Menu</h2>
-          <p className="text-xs font-medium text-stone-600 sm:text-sm">Harga ekonomis ala resto</p>
+          <p className="text-sm font-medium text-stone-600">Harga ekonomis ala resto</p>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           {menus.map((menu) => (
             <article
               key={menu.name}
-              className="overflow-hidden rounded-2xl border border-orange-200 bg-white shadow-md"
+              className="overflow-hidden rounded-2xl border border-orange-200 bg-white shadow-md transition hover:-translate-y-0.5"
             >
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-[16/11] bg-orange-50">
                 <Image
                   src={menu.image}
                   alt={menu.name}
@@ -109,7 +109,7 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <div className="space-y-2 p-4">
+              <div className="space-y-2 p-4 sm:p-5">
                 <h3 className="text-base font-semibold text-orange-950 sm:text-lg">{menu.name}</h3>
                 <p className="text-sm leading-6 text-stone-600">{menu.description}</p>
                 <p className="text-base font-bold text-orange-700">{menu.price}</p>
