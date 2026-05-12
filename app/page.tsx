@@ -179,7 +179,7 @@ export default function Home() {
         <div className="mt-4 overflow-hidden rounded-2xl border border-orange-200">
           <iframe
             title="Lokasi Miesapisinar"
-            src="https://www.google.com/maps?q=Jl%20Tidar%20depan%20SPBU,%20Surabaya&output=embed"
+            src="https://www.google.com/maps?q=MIE+SAPI+SINAR,+Jl.+Tidar,+Surabaya&output=embed"
             className="h-64 w-full sm:h-72"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
