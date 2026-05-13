@@ -60,12 +60,12 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center gap-2 rounded-full border border-orange-200 bg-white/90 px-2 py-2 shadow-sm sm:px-3">
-            <div className="relative h-10 w-10 overflow-hidden rounded-full border border-orange-200 bg-white sm:h-12 sm:w-12">
+            <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-orange-200 bg-white sm:h-12 sm:w-12">
               <Image
                 src="/logo-uwika.png"
                 alt="Logo UWIKA"
                 fill
-                className="object-contain p-1"
+                className="object-cover"
               />
             </div>
             <span className="text-xs font-semibold tracking-wide text-stone-600 sm:text-sm">
@@ -200,8 +200,7 @@ export default function Home() {
       </section>
 
       <footer className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-center text-xs font-medium text-stone-600 shadow-sm sm:py-5 sm:text-sm">
-        © {new Date().getFullYear()} Miesapisinar. Seluruh hak cipta dilindungi.
-        Dibuat untuk program KKN Digital Marketing UWIKA.
+        @kkndigitalmarketing
       </footer>
 
       <a
