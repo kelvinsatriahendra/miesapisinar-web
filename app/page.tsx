@@ -59,7 +59,7 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-orange-200 bg-white shadow-sm sm:h-12 sm:w-12">
+          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-orange-200 bg-white shadow-sm sm:h-24 sm:w-24">
             <Image
               src="/logo-uwika.png"
               alt="Logo UWIKA"
@@ -195,7 +195,7 @@ export default function Home() {
       </section>
 
       <footer className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-center text-xs font-medium text-stone-600 shadow-sm sm:py-5 sm:text-sm">
-        @kkndigitalmarketing
+        Copyright @kkndigitalmarketing
       </footer>
 
       <a
