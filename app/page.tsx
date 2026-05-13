@@ -59,18 +59,13 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="flex items-center gap-2 rounded-full border border-orange-200 bg-white/90 px-2 py-2 shadow-sm sm:px-3">
-            <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-orange-200 bg-white sm:h-12 sm:w-12">
-              <Image
-                src="/logo-uwika.png"
-                alt="Logo UWIKA"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <span className="text-xs font-semibold tracking-wide text-stone-600 sm:text-sm">
-              Mitra KKN UWIKA
-            </span>
+          <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-orange-200 bg-white shadow-sm sm:h-12 sm:w-12">
+            <Image
+              src="/logo-uwika.png"
+              alt="Logo UWIKA"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
         <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
