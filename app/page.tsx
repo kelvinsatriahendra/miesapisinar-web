@@ -50,7 +50,7 @@ export default function Home() {
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 sm:gap-10 sm:py-8 md:px-8 md:py-12">
       <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-4 py-7 shadow-lg backdrop-blur sm:px-6 sm:py-10 md:px-10">
         <div className="mb-5 flex items-start justify-between gap-4">
-          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-orange-200 sm:h-24 sm:w-24">
+          <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-orange-200 shadow-sm sm:h-24 sm:w-24">
             <Image
               src="/logo-miesapisinar.jpeg"
               alt="Logo Miesapisinar"
@@ -59,13 +59,18 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="relative h-14 w-24 overflow-hidden rounded-lg border border-orange-200 bg-white p-1 sm:h-16 sm:w-28">
-            <Image
-              src="/logo-uwika.png"
-              alt="Logo UWIKA"
-              fill
-              className="object-contain p-1"
-            />
+          <div className="flex items-center gap-2 rounded-full border border-orange-200 bg-white/90 px-2 py-2 shadow-sm sm:px-3">
+            <div className="relative h-10 w-10 overflow-hidden rounded-full border border-orange-200 bg-white sm:h-12 sm:w-12">
+              <Image
+                src="/logo-uwika.png"
+                alt="Logo UWIKA"
+                fill
+                className="object-contain p-1"
+              />
+            </div>
+            <span className="text-xs font-semibold tracking-wide text-stone-600 sm:text-sm">
+              Mitra KKN UWIKA
+            </span>
           </div>
         </div>
         <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
@@ -194,8 +199,9 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="pb-24 text-center text-sm font-medium text-stone-600 sm:pb-20">
-        Copyright KKN digital marketing
+      <footer className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-center text-xs font-medium text-stone-600 shadow-sm sm:py-5 sm:text-sm">
+        © {new Date().getFullYear()} Miesapisinar. All rights reserved. Developed by
+        KKN Digital Marketing.
       </footer>
 
       <a
