@@ -200,8 +200,8 @@ export default function Home() {
       </section>
 
       <footer className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-center text-xs font-medium text-stone-600 shadow-sm sm:py-5 sm:text-sm">
-        © {new Date().getFullYear()} Miesapisinar. All rights reserved. Developed by
-        KKN Digital Marketing.
+        © {new Date().getFullYear()} Miesapisinar. Seluruh hak cipta dilindungi.
+        Dikembangkan oleh Tim KKN Digital Marketing UWIKA.
       </footer>
 
       <a
