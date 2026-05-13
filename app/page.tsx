@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-8 px-4 py-6 sm:gap-10 sm:py-8 md:px-8 md:py-12">
       <section className="rounded-3xl border border-orange-200/70 bg-white/80 px-4 py-7 shadow-lg backdrop-blur sm:px-6 sm:py-10 md:px-10">
-        <div className="mb-5 flex items-center gap-4">
+        <div className="mb-5 flex items-start justify-between gap-4">
           <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-orange-200 sm:h-24 sm:w-24">
             <Image
               src="/logo-miesapisinar.jpeg"
@@ -59,7 +59,14 @@ export default function Home() {
               priority
             />
           </div>
-          <p className="text-sm font-medium text-stone-700 sm:text-base">@miesapisinartidarsby</p>
+          <div className="relative h-14 w-24 overflow-hidden rounded-lg border border-orange-200 bg-white p-1 sm:h-16 sm:w-28">
+            <Image
+              src="/logo-uwika.png"
+              alt="Logo UWIKA"
+              fill
+              className="object-contain p-1"
+            />
+          </div>
         </div>
         <p className="mb-3 inline-flex rounded-full bg-orange-100 px-4 py-1 text-sm font-semibold text-orange-800">
           Company Profile UMKM
@@ -186,6 +193,10 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <footer className="pb-24 text-center text-sm font-medium text-stone-600 sm:pb-20">
+        Copyright KKN digital marketing
+      </footer>
 
       <a
         href="https://wa.me/6282266592267"
