@@ -197,7 +197,7 @@ export default function Home() {
       </section>
 
       <footer className="rounded-2xl border border-orange-200 bg-white/80 px-4 py-4 text-center text-xs font-medium text-stone-600 shadow-sm sm:py-5 sm:text-sm">
-        Copyright @kkndigitalmarketing
+kkn 2026 universitas widya kartika
       </footer>
 
       <a
